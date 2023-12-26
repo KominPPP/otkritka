@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Muller';
+    src: url(MullerRegular.woff2);
+    font-display: swap;
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Muller';
+    src: url(MullerBold.woff2);
+    font-display: swap;
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: 'Russo';
+    src: url(RussoOne-Regular.woff2),
+      url(RussoOne-Regular.woff);
+    font-display: swap;
+    font-weight: 400;
+  }
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 320px;
+    margin: 0;
+}
+header {
+    width: 1920px;
+    height: 120px;
+    background: rgb(182, 0, 0);
+    
+}
+
+.head {
+    background-image: url(top_img2.jpg);
+    background-position: top;
+    background-size: contain;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.head h2 {
+    font-family: 'Russo';
+    font-size: 80px;
+    color: rgba(255, 160, 35, 0.634);
+    margin: 0;
+    padding: auto;
+    align-items: center;
+    padding-top: 78px;
+}
+.voice_section {
+    background:  rgb(182, 0, 0);
+    width: 1920px;
+}
+.voice_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice_sticker {
+    width: 300px;
+    height: 300px;
+    padding-right: 60px;
+}
+
+.voice_img {
+    width: 290px;
+    height: 290px;
+    border-radius: 100%;
+}
+
+.voice {
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 100%;
+}
+
+.new {
+    background-color: rgb(255, 255, 255); 
+    width: 1920px;
+    background-color: rgb(182, 0, 0);
+  }
+  
+  .new_container {
+      margin: 0 auto;
+      padding: 0 12px;
+      max-width: 1304px;
+      height: 470px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .new_title {  
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-left: 64px;
+    font-family: 'Russo', sans-serif;
+    font-size: 60px;
+    line-height: 72px;
+    color: rgb(248 255 0);
+    background-image: url(present1.png);
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  
+  .new_slider {
+      /* overflow: hidden; */
+      margin-bottom: 65px;
+      width: 100%;
+      height: inherit;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  .slides {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  align-items: center;
+  justify-content: center; }
+  
+  .new_slider img:not(:last-child) {
+    margin-right: 28px;
+  }
+  
+  .new_container .control {
+      /* position: absolute;
+      margin-left: -10%;
+      left: 50%; */
+  }
+  .new_container label {
+      border: 2px solid rgb(248 255 0);
+      border-radius: 100%;
+      padding: 10px;
+      width: auto;
+      height: auto;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      color: white;
+      background-color: transparent;
+      opacity: 1;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      bottom: 20px;
+      margin-right: 40px;
+  }
+
+  .screen1 img,
+  .screen2 img,
+  .screen3 img,
+  .screen4 img {
+    width: 300px;
+    height: 300px;
+  }
+  .screen4 h2 {
+    padding-left: 90px;
+    font-weight: 1000;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Muller';
+    margin: 0;
+  }
+  
+  #point1:checked ~ .control label:nth-of-type(1),
+  #point2:checked ~ .control label:nth-of-type(2),
+  #point3:checked ~ .control label:nth-of-type(3), 
+  #point4:checked ~ .control label:nth-of-type(4) {
+    background: yellow;
+  }
+  
+  #point1:checked ~ .new_slider > .screen1,
+  #point2:checked ~ .new_slider > .screen2, 
+  #point3:checked ~ .new_slider > .screen3,
+  #point4:checked ~ .new_slider > .screen4{
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .mid {
+    background-image: url(xxx.jpg);
+    background-color: #cd101d;
+    height: 50px;
+    width: 1920px;
+  }
